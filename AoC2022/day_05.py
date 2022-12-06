@@ -17,7 +17,7 @@ raw = aoc_helper.fetch(5, 2022)
 
 """
 # this function could have been used to avoid manual parsing of input
-
+# note that it takes file object as input
 def parse_crates(f):
     lines = []
     while '1' not in (line := f.readline()):
