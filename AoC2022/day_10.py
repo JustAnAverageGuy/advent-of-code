@@ -25,14 +25,9 @@ def part_one():
     X = 1
     s = 0
     while cycle <= 220:
-        if cycle in [20 + 40*k for k in range(6)]:
-            s += cycle * X
-
-        if i[0] == 'noop':
-            cycle += 1
-        if i[0] == 'addx':
-            cycle += 1
-            X += i[1]
+        if cycle in [20 + 40*k for k in range(6)]:s += cycle * X
+        cycle += 1
+        X += i[1]
         i = data.next()
     print(s)
     return s
@@ -45,9 +40,10 @@ def part_two():
     X = 1
     while cycle <= 240:
         if ((cycle-1) % 40 in [X-1, X, X+1]):
+            # Different Printintg Modes
             #monitor += '⬜🟨🟦'[[X-1,X,X+1].index((cycle-1)%40)]
-            #monitor += '⬜'
-            monitor += '⬜🟨🟦'[((cycle-1)//40) % 3]
+            monitor += '🔲'
+            #monitor += '⬜🟨🟦'[((cycle-1)//40) % 3]
         else:
             monitor += '⬛'
 
