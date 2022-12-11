@@ -3,6 +3,7 @@ import re
 from aoc_helper import (
     iter,
     range,
+    decode_text,
 )
 
 raw = aoc_helper.fetch(10, 2022)
@@ -44,8 +45,10 @@ def part_two():
             #monitor += '⬜🟨🟦'[[X-1,X,X+1].index((cycle-1)%40)]
             monitor += '🔲'
             #monitor += '⬜🟨🟦'[((cycle-1)//40) % 3]
+            #monitor += '#'
         else:
             monitor += '⬛'
+            #monitor += ' '
 
         if (cycle % 40 == 0):
             monitor += '\n'
@@ -56,8 +59,10 @@ def part_two():
         except StopIteration:
             i = ('noop', 0)
     print(monitor)
+    return decode_text(list(map(lambda x : [(True if i == '🔲' else False) for i in x],monitor.splitlines())))
 
 
-part_two()
-#aoc_helper.lazy_submit(day=10, year=2022, solution=part_one)
-#aoc_helper.lazy_submit(day=10, year=2022, solution=part_two)
+aoc_helper.lazy_submit(day=10, year=2022, solution=part_one)
+
+#print(part_two())
+aoc_helper.lazy_submit(day=10, year=2022, solution=part_two)
