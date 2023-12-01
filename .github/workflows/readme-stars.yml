@@ -15,8 +15,9 @@ jobs:
         with:
           userId: 1487552 
           sessionCookie: ${{ secrets.AOC_SESSION }}
-		  year: 2023
-		  readmeLocation: AoC2023/README.md
+          year: 2023
+          readmeLocation: AoC2023/README.md
       - uses: stefanzweifel/git-auto-commit-action@v5 # use v5
         with:
           commit_message: Update README stars
+
