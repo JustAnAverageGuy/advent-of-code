@@ -14,7 +14,7 @@ jobs:
       - uses: k2bd/advent-readme-stars@v1
         with:
           userId: 1487552 
-          sessionCookie: ${{ secrets.AOC_SESSION }}
+          sessionCookie: secrets.AOC_SESSION
 		  year: 2023
 		  readmeLocation: AoC2023/README.md
       - uses: stefanzweifel/git-auto-commit-action@v5 # use v5
