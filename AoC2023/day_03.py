@@ -20,27 +20,10 @@ from aoc_helper import (
 raw = aoc_helper.fetch(3, 2023)
 
 
-
-# for line in raw.splitlines():
-    
-
-
-
-
-
-
-
-
-
-
-
-def parse_raw(raw):
-    return Grid.from_string(raw.strip(), classify=lambda x: x)
+def parse_raw(raw): return Grid.from_string(raw.strip(), classify=lambda x: x)
 
 
 data = parse_raw(raw)
-
-
 
 def part_one(data:Grid):
     n = len(data.data)
@@ -83,7 +66,7 @@ def part_one(data:Grid):
     sm = 0
     for loc in symbol_neighbours:
         k = extract_total_int(loc)
-        if k : print(k)
+        # if k : print(k)
         sm += k
     return sm
 
@@ -148,7 +131,7 @@ def part_two(data):
     sm = 0
     for loc in symbol_locs:
         neis = symbol_locs[loc]
-        print(neis)
+        # print(neis)
         neints = []
         for j in neis:
             k = extract_total_int(j)
