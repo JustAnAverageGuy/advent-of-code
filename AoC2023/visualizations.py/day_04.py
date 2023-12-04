@@ -8,7 +8,7 @@ DELAY = "DELAY" in sys.argv
 try:
 
     print()
-    print('\x1b[?25l',end='')
+    print('\x1b[?25l',end='') # hide cursor
     def pprint(*args, **kwargs): 
         delay      = kwargs.get("delay", DELAY) 
         delay_time = kwargs.get("delay_time", 0.1)
@@ -67,7 +67,7 @@ try:
     {' '*20}[{Effect.DIM}Part{Effect.DIM_OFF} {BrightColor.CYAN}II{BrightColor.OFF}] {Effect.DIM}Total Cards:{Effect.DIM_OFF} {sum(tot_counts.values())}
     """
     )
-    print('\x1b[?25h',end='')
+    print('\x1b[?25h',end='') # show cursor
 except KeyboardInterrupt:
-    print(BrightColor.OFF,Color.OFF)
+    print(BrightColor.OFF,Color.OFF,'\x1b[?25h')
     bright_red("******\n*DEAD*\n******")
