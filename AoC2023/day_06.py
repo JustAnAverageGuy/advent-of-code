@@ -11,13 +11,16 @@ import sys
 EXAMPLE = "EXAMPLE" in sys.argv
 TWO = "2" in sys.argv
 
+DAY = 6
+YEAR = 2023
+
 if EXAMPLE:
     if TWO:
-        raw, answer = aoc_helper.get_sample_input(day=6, year=2023, part=2)
+        raw, answer = aoc_helper.get_sample_input(day=DAY, year=YEAR, part=2)
     else: 
-        raw, answer = aoc_helper.get_sample_input(day=6, year=2023, part=1)
+        raw, answer = aoc_helper.get_sample_input(day=DAY, year=YEAR, part=1)
 else:
-    raw = aoc_helper.fetch(6, 2023)
+    raw = aoc_helper.fetch(DAY, YEAR)
 
 
 times, distances =  raw.splitlines()

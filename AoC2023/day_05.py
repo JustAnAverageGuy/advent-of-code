@@ -12,14 +12,16 @@ import sys
 EXAMPLE = "EXAMPLE" in sys.argv
 TWO = "2" in sys.argv
 
+DAY = 5
+YEAR = 2023
+
 if EXAMPLE:
     if TWO:
-        raw, answer = aoc_helper.get_sample_input(day=5, year=2023, part=2)
+        raw, answer = aoc_helper.get_sample_input(day=DAY, year=YEAR, part=2)
     else: 
-        raw, answer = aoc_helper.get_sample_input(day=5, year=2023, part=1)
+        raw, answer = aoc_helper.get_sample_input(day=DAY, year=YEAR, part=1)
 else:
-    raw = aoc_helper.fetch(5, 2023)
-    
+    raw = aoc_helper.fetch(DAY, YEAR)
 
 s = raw.split("\n\n")
 seeds = extract_ints(s[0])
