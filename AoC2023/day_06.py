@@ -20,7 +20,6 @@ else:
     raw = aoc_helper.fetch(6, 2023)
 
 
-# print(repr(raw))
 times, distances =  raw.splitlines()
 times = extract_ints(times)
 distances = extract_ints(distances)
