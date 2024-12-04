@@ -1,0 +1,1 @@
+- Solve day 1 using vim commands
