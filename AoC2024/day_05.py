@@ -43,7 +43,7 @@ def check(rules:set[tuple[int, int]], order:list[int]):
 
 
 
-from functools import cmp_to_key
+from functools import cmp_to_key # my beloved 
 
 
 
