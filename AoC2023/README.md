@@ -29,3 +29,6 @@
     - Got till like line 60 and then decided to code it up.
     - took like 10 min to adapt.
     - see [man3.txt](man3.txt) for the partially cleaned up file 
+
+<!-- AOC TILES BEGIN -->
+<!-- AOC TILES END -->
