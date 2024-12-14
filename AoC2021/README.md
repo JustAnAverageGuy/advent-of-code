@@ -29,6 +29,3 @@ Just my AoC repository
 |23|||
 |24|||
 |25|||
-
-<!-- AOC TILES BEGIN -->
-<!-- AOC TILES END -->
