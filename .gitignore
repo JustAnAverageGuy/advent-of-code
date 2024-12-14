@@ -1,4 +1,3 @@
-hmm.py
-*input*
 *.in
-day_??.txt
+.aoc_tiles/*
+!.aoc_tiles/tiles/
