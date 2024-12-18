@@ -3,10 +3,10 @@ All Advent of Code problems which I have attempted
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  Advent of Code - 151/484 ⭐
+  Advent of Code - 153/486 ⭐
 </h1>
 <h1 align="center">
-  2024 - 34 ⭐ - Python
+  2024 - 36 ⭐ - Python
 </h1>
 <a href="AoC2024/day_01.py">
   <img src=".aoc_tiles/tiles/2024/01.png" width="161px">
@@ -58,6 +58,9 @@ All Advent of Code problems which I have attempted
 </a>
 <a href="AoC2024/day_17.py">
   <img src=".aoc_tiles/tiles/2024/17.png" width="161px">
+</a>
+<a href="AoC2024/day_18.py">
+  <img src=".aoc_tiles/tiles/2024/18.png" width="161px">
 </a>
 <h1 align="center">
   2023 - 28 ⭐ - Python
