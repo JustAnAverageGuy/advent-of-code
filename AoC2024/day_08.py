@@ -1,30 +1,9 @@
-from collections import Counter, defaultdict, deque
+from collections import defaultdict
 from itertools import combinations, permutations
 
 import aoc_helper
-from aoc_helper import (
-    Grid,
-    PrioQueue,
-    SparseGrid,
-    decode_text,
-    extract_ints,
-    extract_iranges,
-    extract_ranges,
-    extract_uints,
-    frange,
-    irange,
-    iter,
-    list,
-    map,
-    multirange,
-    range,
-    search,
-    tail_call,
-)
 
 raw = aoc_helper.fetch(8, 2024)
-
-
 
 def parse_raw(raw: str):
     d = defaultdict(list)
@@ -37,10 +16,6 @@ def parse_raw(raw: str):
 
 data = parse_raw(raw)
 
-
-# providing this default is somewhat of a hack - there isn't any other way to
-# force type inference to happen, AFAIK - but this won't work with standard
-# collections (list, set, dict, tuple)
 def part_one(data=data):
     d, (h, w) = data
     anitnodes = set()
@@ -63,10 +38,6 @@ def part_one(data=data):
 
 aoc_helper.lazy_test(day=8, year=2024, parse=parse_raw, solution=part_one)
 
-
-# providing this default is somewhat of a hack - there isn't any other way to
-# force type inference to happen, AFAIK - but this won't work with standard
-# collections (list, set, dict, tuple)
 def part_two(data=data):
     d, (h, w) = data
     anitnodes = set()
