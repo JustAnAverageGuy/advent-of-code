@@ -3,9 +3,6 @@ All Advent of Code problems which I have attempted
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  Advent of Code - 165/498 ⭐
-</h1>
-<h1 align="center">
   2024 - 48 ⭐ - Python
 </h1>
 <a href="AoC2024/day_01.py">
